@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", (event) => {
 
     event.preventDefault();
-    
-    const userName = document.getElementById("username").value.trim();
+
+    const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //username
 
-    if (userName.length < 3) {
+    if (username.length < 3) {
       isValid = false;
       messages.push("error message user name");
     }
